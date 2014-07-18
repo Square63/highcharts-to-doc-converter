@@ -1,0 +1,19 @@
+runtime "ruby"
+
+full_remote_build true
+gem "nokogiri"
+gem "phantomjs"
+gem "httmultiparty"
+gem "aws-s3"
+
+file "iron.json"
+file "data/Chart_context_menu.html", "data"
+file "data/highchart-convert.js", "data"
+file "data/highcharts-more.js", "data"
+file "data/highstock.js", "data"
+file "data/jquery.1.9.1.min.js", "data"
+file "data/input.json", "data"
+file "lib/high_chart_converter.rb", 'lib'
+file "lib/aws_s3.rb", 'lib'
+file "app_config.yml"
+exec "lib/conversion_task.rb"

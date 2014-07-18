@@ -1,0 +1,31 @@
+#REX Break this out to use different environments. Test, Development and Production, like a typical Rails build.
+development:
+  aws_s3:
+    access_key: "AKIAJIV6UG55WBEQXR7A"
+    secret_key: "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"
+    bucket_name: "doc-convertor"
+  phantomjs:
+    width: "600"
+  aspose:
+    url: 'http://whispering-fjord-3928.herokuapp.com'
+    appSid: '17a2657d-285a-429e-8d51-7b1f9c13a72a'
+test:
+  aws_s3:
+    access_key: "AKIAJIV6UG55WBEQXR7A"
+    secret_key: "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"
+    bucket_name: "doc-convertor"
+  phantomjs:
+    width: "600"
+  aspose:
+    url: 'http://whispering-fjord-3928.herokuapp.com'
+    appSid: '17a2657d-285a-429e-8d51-7b1f9c13a72a'
+production:
+  aws_s3:
+    access_key: "AKIAJIV6UG55WBEQXR7A"
+    secret_key: "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"
+    bucket_name: "doc-convertor"
+  phantomjs:
+    width: "600"
+  aspose:
+    url: 'http://whispering-fjord-3928.herokuapp.com'
+    appSid: '17a2657d-285a-429e-8d51-7b1f9c13a72a'

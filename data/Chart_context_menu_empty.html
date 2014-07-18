@@ -1,0 +1,77 @@
+
+<!-- saved from url=(0055)http://wall.fractus.ws/data/1418967978report_spike.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script type="text/javascript" src="./Chart context menu_files/jquery.min.js"></script>
+<script src="./Chart context menu_files/highcharts.js"></script>
+<script src="./Chart context menu_files/exporting.js"></script>
+<script>
+
+$(function () {
+        $('#container1').highcharts({
+        title: {
+            text: 'Sharebuilder Gap Analysis - Account Information'
+        },
+
+        subtitle: {
+            text: 'Positive Values are where Sharebuilder is better'
+        },
+
+        xAxis: {
+            categories: ['Acct Alerts', 'Acct Balances', 'Acct History', 'Acct Integration', 'Acct Performance Evaluation Tools', 'Other Acct Documents', 'Tax Information']
+        },
+        yAxis: {
+            tickInterval: 1
+
+        },
+        series: [{
+            name: 'Sharebuilder is Better',
+            type: 'bar',
+            data: [-.23,-.18,.65,-2.1,-.15,-.55,-.01],
+            negativeColor: 'red'
+        },
+            {
+                name: 'Others are better', color: 'red'
+            }]
+
+    });
+});
+
+$(function () {
+        $('#container2').highcharts({
+        title: {
+            text: 'Another Gap Analysis - Account Information'
+        },
+
+        subtitle: {
+            text: 'Positive Values are where Another is better'
+        },
+
+        xAxis: {
+            categories: ['Acct Alerts', 'Acct Balances', 'Acct History', 'Acct Integration', 'Acct Performance Evaluation Tools', 'Other Acct Documents', 'Tax Information']
+        },
+        yAxis: {
+            tickInterval: 1
+
+        },
+        series: [{
+            name: 'Another is Better',
+            type: 'bar',
+            data: [-.23,-.18,.65,-3.1,-.15,-.55,-.01],
+            negativeColor: 'red'
+        },
+            {
+                name: 'Others are better', color: 'red'
+            }]
+
+    });
+});
+
+
+
+</script>
+</head>
+
+<body style=""><p>This will turn into one embedded image</p>
+<div id="container1" style="min-width: 310px; height: 400px; margin: 0 auto" data-highcharts-chart="0">  
+</div>
+</body></html>

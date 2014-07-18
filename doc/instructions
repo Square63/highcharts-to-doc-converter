@@ -1,0 +1,7 @@
+rake converter:upload_worker["conversion.worker"]    # this will upload the worker
+rake converter:schedule_task["conversion.worker","Chart_context_menu.html"]    # this will schedule the task to run
+ruby lib/conversion_task.rb    # to run the task locally
+rake converter:remove_files    # this removes unnecessary file like output and tmp
+
+rspec spec/high_chart_converter_spec.rb   # to run tests for highchartconverter
+rspec spec/aws_s3_spec.rb 			# to run tests for amazonS3
